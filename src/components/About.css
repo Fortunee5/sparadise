@@ -1,0 +1,138 @@
+.about {
+  background: var(--ivory);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.about-image {
+  position: relative;
+}
+
+.img-wrapper {
+  position: relative;
+  z-index: 2;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.img-badge {
+  position: absolute;
+  bottom: 30px;
+  right: -20px;
+  background: var(--gold);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-family: var(--header-font);
+  font-weight: 700;
+  letter-spacing: 2px;
+  box-shadow: 0 10px 30px rgba(201, 168, 76, 0.4);
+}
+
+.img-decoration {
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  width: 80%;
+  height: 80%;
+  border: 5px solid var(--emerald);
+  opacity: 0.1;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.about-content {
+  padding: 20px;
+}
+
+.section-subtitle {
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.about h2 {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.about p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.stat-card {
+  padding: 25px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: var(--transition);
+  border-bottom: 4px solid transparent;
+}
+
+.stat-card:hover {
+  transform: translateY(-10px);
+  border-bottom-color: var(--gold);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.stat-number {
+  font-family: var(--header-font);
+  font-size: 2.5rem;
+  color: var(--emerald);
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  color: #888;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    padding: 0;
+  }
+  
+  .img-badge {
+    right: 20px;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}

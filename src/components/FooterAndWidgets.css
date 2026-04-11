@@ -1,0 +1,197 @@
+.footer {
+  background: var(--charcoal);
+  color: white;
+  padding: 80px 5% 40px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr 1fr;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+.footer-brand .logo {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.footer-brand p {
+  color: #aaa;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: var(--transition);
+}
+
+.social-links a:hover {
+  background: var(--gold);
+  transform: translateY(-5px);
+}
+
+.footer-links h3, .footer-contact h3, .footer-cities h3 {
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+  color: var(--gold);
+}
+
+.footer-links ul, .footer-contact ul {
+  list-style: none;
+}
+
+.footer-links li, .footer-contact li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #aaa;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.footer-links a:hover {
+  color: white;
+  padding-left: 5px;
+}
+
+.footer-contact li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #aaa;
+}
+
+.city-badges {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.city-badge {
+  background: rgba(201, 168, 76, 0.1);
+  color: var(--gold);
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 1px solid rgba(201, 168, 76, 0.2);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 40px;
+  text-align: center;
+  color: #666;
+}
+
+.footer-bottom a {
+  color: #666;
+  text-decoration: none;
+}
+
+/* Floating Widgets */
+.scroll-progress-widget {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  z-index: 1001;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-progress-widget.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.progress-bg {
+  stroke: rgba(10, 74, 58, 0.2);
+}
+
+.progress-bar {
+  stroke: var(--gold);
+  stroke-linecap: round;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  transition: stroke-dashoffset 0.1s linear;
+}
+
+.arrow-icon {
+  position: absolute;
+  color: var(--gold);
+  background: var(--emerald);
+  padding: 8px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.scroll-progress-widget:hover .arrow-icon {
+  background: var(--gold);
+  color: white;
+  transform: translateY(-5px);
+}
+
+.whatsapp-floating {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  background: #25D366;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  z-index: 1001;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+}
+
+.whatsapp-floating:hover {
+  transform: translateY(-5px) scale(1.05);
+}
+
+@media (max-width: 992px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .whatsapp-text {
+    display: none;
+  }
+}
