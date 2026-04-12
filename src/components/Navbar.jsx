@@ -26,7 +26,7 @@ const Navbar = () => {
       <div className="nav-container">
         <Link to="/" className="logo">
           <img src={logo} alt="SpaRadise Logo" className="logo-img" />
-          Spa<span>Radise</span>
+          Spa<span>Radice</span>
         </Link>
 
         <div className={`nav-links ${isOpen ? 'open' : ''}`}>
