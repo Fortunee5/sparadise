@@ -33,10 +33,26 @@
   color: var(--gold);
   text-decoration: none;
   letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .logo span {
   color: white;
+}
+
+.logo-img {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  transition: var(--transition);
+}
+
+.navbar.scrolled .logo-img {
+  height: 38px;
 }
 
 .nav-links {
@@ -123,6 +139,14 @@
   .nav-link {
     font-size: 1.5rem;
     margin: 15px 0;
+  }
+
+  .logo-img {
+    height: 40px;
+  }
+
+  .navbar.scrolled .logo-img {
+    height: 34px;
   }
 
   .promo-banner-mobile {

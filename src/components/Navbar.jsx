@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Instagram, Facebook, Phone, MessageSquare } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import logo from '../assets/spa-logo.png'; // update path to match where you save the image
 import './Navbar.css';
 
 const Navbar = () => {
@@ -24,6 +25,7 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
         <Link to="/" className="logo">
+          <img src={logo} alt="SpaRadise Logo" className="logo-img" />
           Spa<span>Radise</span>
         </Link>
 
