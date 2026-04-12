@@ -19,11 +19,12 @@ const useCounter = (target, duration = 2000) => {
       observer.observe(elementRef.current);
     }
 
-    return () => {
-      if (elementRef.current) {
-        observer.unobserve(elementRef.current);
-      }
-    };
+const el = elementRef.current;
+return () => {
+  if (el) {
+    observer.unobserve(el);
+  }
+};
   }, []);
 
   useEffect(() => {

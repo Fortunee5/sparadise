@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './FooterAndWidgets.css';
-import { Instagram, Facebook, Twitter, Linkedin, Phone, MessageSquare, ArrowUp, Mail, MapPin } from 'lucide-react';
+import { Instagram, Facebook, Phone, MessageSquare, ArrowUp, Mail, MapPin } from 'lucide-react';
 import useScrollReveal from '../hooks/useScrollReveal';
 
 const FooterAndWidgets = () => {
@@ -39,9 +39,9 @@ const FooterAndWidgets = () => {
               <Link to="/" className="logo">Spa<span>Radise</span></Link>
               <p>Premium mobile spa services bringing luxury and tranquility to your doorstep in Lagos, Abuja, and Port Harcourt.</p>
               <div className="social-links">
-  <a href="#"><Instagram size={20} /></a>
-  <a href="#"><Facebook size={20} /></a>
-  <a href="#">
+  <a href="https://instagram.com" target="_blank" rel="noreferrer"><Instagram size={20} /></a>
+  <a href="https://facebook.com" target="_blank" rel="noreferrer"><Facebook size={20} /></a>
+  <a href="https://tiktok.com" target="_blank" rel="noreferrer">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width={20}
