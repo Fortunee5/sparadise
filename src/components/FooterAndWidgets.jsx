@@ -39,9 +39,9 @@ const FooterAndWidgets = () => {
               <Link to="/" className="logo">Spa<span>Radise</span></Link>
               <p>Premium mobile spa services bringing luxury and tranquility to your doorstep in Lagos, Abuja, and Port Harcourt.</p>
               <div className="social-links">
-  <a href="https://instagram.com" target="_blank" rel="noreferrer"><Instagram size={20} /></a>
-  <a href="https://facebook.com" target="_blank" rel="noreferrer"><Facebook size={20} /></a>
-  <a href="https://tiktok.com" target="_blank" rel="noreferrer">
+  <a href="https://www.instagram.com/sparadice001" target="_blank" rel="noreferrer"><Instagram size={20} /></a>
+  <a href="https://web.facebook.com/profile.php?fb_profile_edit_entry_point=%7B%22click_point%22%3A%22edit_profile_button%22%2C%22feature%22%3A%22profile_header%22%7D&id=61559988459009&sk=about" target="_blank" rel="noreferrer"><Facebook size={20} /></a>
+  <a href="https://www.tiktok.com/@sparadice3?_r=1&_t=ZS-95VsdkLk9rw" target="_blank" rel="noreferrer">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width={20}
@@ -71,8 +71,8 @@ const FooterAndWidgets = () => {
               <ul>
                 <li><Phone size={18} /> +234 814 249 5552</li>
                 <li><Mail size={18} /> info@sparadise.com</li>
-                <li><MapPin size={18} /> Lagos | Abuja | PH</li>
-                <li><MessageSquare size={18} /> 7 Days a Week, 8am-8pm</li>
+                <li><MapPin size={18} /> Ikoyi Nigeria</li>
+                <li><MessageSquare size={18} /> 7 Days a Week, 24hours</li>
               </ul>
             </div>
 
