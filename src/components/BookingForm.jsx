@@ -9,7 +9,7 @@ const services = [
   "Luxury Hydrafacial", "Anti-Aging Facial", 
   "Coffee Body Scrub", "Seaweed Body Wrap",
   "Luxury Pedicure", "Gel Manicure",
-  "Full Body Wax", "Royal Spa Day"
+  "Full Body Wax", "Royal Spa Day", "Exotic Massage", "Nuru Massage"
 ];
 
 const BookingForm = () => {
