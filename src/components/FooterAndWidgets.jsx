@@ -70,7 +70,7 @@ const FooterAndWidgets = () => {
               <h3>Contact Info</h3>
               <ul>
                 <li><Phone size={18} /> +234 814 249 5552</li>
-                <li><Mail size={18} /> info@sparadise.com</li>
+                <li><Mail size={18} /> info@sparadice.com</li>
                 <li><MapPin size={18} /> Ikoyi Nigeria</li>
                 <li><MessageSquare size={18} /> 7 Days a Week, 24hours</li>
               </ul>
@@ -96,7 +96,7 @@ const FooterAndWidgets = () => {
           </div>
 
           <div className="footer-bottom">
-            <p>&copy; 2026 SpaRadise Mobile Spa. <Link to="/admin/login">All rights reserved.</Link></p>
+            <p>&copy; 2026 SpaRadice Mobile Spa. <Link to="/admin/login">All rights reserved.</Link></p>
           </div>
         </div>
       </footer>
