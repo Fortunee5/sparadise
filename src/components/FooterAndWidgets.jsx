@@ -36,7 +36,7 @@ const FooterAndWidgets = () => {
         <div className="container">
           <div className="footer-grid">
             <div className="footer-brand reveal">
-              <Link to="/" className="logo">Spa<span>Radise</span></Link>
+              <Link to="/" className="logo">Spa<span>Radice</span></Link>
               <p>Premium mobile spa services bringing luxury and tranquility to your doorstep in Lagos, Abuja, and Port Harcourt.</p>
               <div className="social-links">
   <a href="https://www.instagram.com/sparadice001" target="_blank" rel="noreferrer"><Instagram size={20} /></a>
